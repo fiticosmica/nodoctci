@@ -23,9 +23,9 @@ def run():
         page_title="Nodo CTCI",
         page_icon="🧬",
     )
+    st.sidebar.header("Inicio")
 
     st.write("# Welcome to Streamlit! 👋")
-
     st.sidebar.success("Select a demo above.")
 
     st.markdown(
