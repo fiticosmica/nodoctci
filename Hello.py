@@ -4,7 +4,7 @@ import pandas as pd
 from streamlit.logger import get_logger
 
 LOGGER = get_logger(__name__)
-img_ctci = Image.open("/media/marca.png")
+img_ctci = Image.open("media/marca.png")
 
 def run():
     st.set_page_config(
