@@ -5,7 +5,7 @@ from streamlit.logger import get_logger
 
 LOGGER = get_logger(__name__)
 img_ctci = Image.open("media/marca.png")
-df = pd.read_csv("data.csv")
+df = pd.read_csv('data.csv')
 
 def run():
     st.set_page_config(
