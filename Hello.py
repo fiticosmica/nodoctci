@@ -17,5 +17,14 @@ def run():
     st.write("El objetivo general es co-crear un modelo de Ciencia Abierta para fortalecer el desarrollo de la ciencia y tecnología en la Macrozona Centro Sur de Chile en concordancia con su territorio y sociedad.")
     st.write("---")
 
+    db_excel = 'datos.xlsx'
+    hoja_exel = 'Hoja1'
+    
+    df = pd.read_excel(db_excel, sheet_name=hoja_exel, usecols='A:N',header=0)
+    df_iniciativas= df.groupby(['Macrotema'], as_index=False)
+    
+    st.write(df_iniciativas)
+
+
 if __name__ == "__main__":
     run()
