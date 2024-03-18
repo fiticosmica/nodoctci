@@ -5,8 +5,7 @@ from streamlit.logger import get_logger
 
 LOGGER = get_logger(__name__)
 img_ctci = Image.open("media/marca.png")
-excel_file = pd.ExcelFile('datos.xlsx')
-sheet_name = 'Hoja1'
+df = pd.read_excel('datos.xlsx','Hoja1',usecols='A:N',header=0)
 
 def run():
     st.set_page_config(
@@ -20,7 +19,6 @@ def run():
 
 
     
-    #df = pd.read_excel(archivo_excel,sheet_name=hoja_exel,usecols='A:N',header=0)
     
     #df_iniciativas= df.groupby(['Macrotema'], as_index=False)
     
