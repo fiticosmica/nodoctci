@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 import pandas as pd
-import plotly.express as px
 from streamlit.logger import get_logger
 
 LOGGER = get_logger(__name__)
